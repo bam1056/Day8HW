@@ -44,11 +44,11 @@ console.log('\nThis is the string split into a new array of strings by using the
 console.log('\nThis is strArray joined with space between elements: \n\n' + strArray.join(' '))
 
 // .pop()
-console.log('The method pop() removes the last element of strArray which is the word: ' + strArray.pop())
+console.log('\n\nThe method pop() removes the last element of strArray which is the word: ' + strArray.pop())
 
 // .push()
 strArray.push('YOU')
-console.log('Where arr.pop("you") removes the last element in the array, arr.push("YOU") adds it. See? \n\n' + strArray)
+console.log('\nWhere arr.pop("you") removes the last element in the array, arr.push("YOU") adds it. See? \n\n' + strArray)
 
 // .slice()
 console.log(strArray.slice(3))
@@ -69,8 +69,8 @@ If I call unshift() with 'dog' and 'bone' as arguments, the strArray will now lo
 
 console.log('\nand the function returns the new array length: ' + strArray.unshift())
 // .filter()
-console.log('The filter function will produce an array of elements that pass the test function.\
+console.log('\n\nThe filter function will produce an array of elements that pass the test function.\
 In this case I am filtering for numbers in numArray less than 10 which outputs: ' + numArray.filter((x) => x < 10))
 
 // .map()
-console.log('The map() function will execute a function call on each element in an array and return an array of the values returned from the callback function. If I pass the square root function as an argument to map, a new array will be created that contains the square roots of every element in the array map is called upon. ' + numArray.map(Math.sqrt))
+console.log('\n\nThe map() function will execute a function call on each element in an array and return an array of the values returned from the callback function. If I pass the square root function as an argument to map, a new array will be created that contains the square roots of every element in the array map is called upon. \n\n' + numArray.map(Math.sqrt))
