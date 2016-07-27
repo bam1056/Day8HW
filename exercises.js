@@ -64,13 +64,11 @@ console.log('The array is modified and strArray now looks like this: ' + strArra
 
 // .unshift()
 strArray.unshift('dog', 'bone')
-console.log("Unshift() adds elements onto the front of an array and returns the value of the new array length.\n\
-If I call unshift() with 'dog' and 'bone' as arguments, the strArray will now look like this: \n\n" + strArray)
+console.log("Unshift() adds elements onto the front of an array and returns the value of the new array length.\nIf I call unshift() with 'dog' and 'bone' as arguments, the strArray will now look like this: \n\n" + strArray)
 
 console.log('\nand the function returns the new array length: ' + strArray.unshift())
 // .filter()
-console.log('\n\nThe filter function will produce an array of elements that pass the test function.\
-In this case I am filtering for numbers in numArray less than 10 which outputs: ' + numArray.filter((x) => x < 10))
+console.log('\n\nThe filter function will produce an array of elements that pass the test function.\nIn this case I am filtering for numbers in numArray less than 10 which outputs: ' + numArray.filter((x) => x < 10))
 
 // .map()
 console.log('\n\nThe map() function will execute a function call on each element in an array and return an array of the values returned from the callback function. If I pass the square root function as an argument to map, a new array will be created that contains the square roots of every element in the array map is called upon. \n\n' + numArray.map(Math.sqrt))
