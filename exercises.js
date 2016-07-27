@@ -10,36 +10,35 @@
 const numArray = [3, 23, 17, 4, 9]
 const strArray = ['my', 'name', 'is', 'Brett', 'thank', 'Alphabetically', 'you']
 const string = 'this is an example of a string'
-console.log(numArray, strArray)
 
 // .sort()
 // ------------------
 // ~ALPHABETICALLY
 // ------------------
-console.log(strArray.sort())
-console.log('The values stored in strArray after SORT is now: ' + strArray)
+console.log('If sort() is called on an array of strings with no compare function, the values stored in strArray after SORT will be mutated alphabetically like so: \n\n' + strArray.sort())
+
+console.log('\nRemember that capital letters will receive president, so it might be best to convert a string to all lower or all upper case before sorting alphabetically.')
 
 // ------------------
 // ASCENDING NUMERIC
 // ------------------
-console.log(numArray.sort((a, b) => a - b))
-console.log('The values stored in numArray after SORT is now: ' + numArray)
+console.log('When sort() is called with a compare function of (a-b), the function mutates the array in ascending order as such: \n\n' + numArray.sort((a, b) => a - b))
 
 // .concat()
-console.log(numArray.concat(strArray))
-console.log('The values stored in numArray after CONCAT is still: ' + numArray)
+console.log('\nWhen concat() is called, a new array is produced that contains the array on which it is called joined with the arrays passed as arguments: \n\n' + numArray.concat(strArray))
 
 // .indexOf()
-console.log(numArray.indexOf(23))
+console.log('When called, indexOf() returns the value of the index of the item searched for. \n\n')
+console.log('The array index of the number 23 in numArray is' + '[' + numArray.indexOf(23) + ']\n\n')
 
-console.log(numArray.indexOf(0))
+console.log('\nIf the element searched for does not exist in the array, indexOf() will return ' + numArray.indexOf(0))
 
-console.log(strArray.indexOf('Brett'))
+console.log('\nIt works on strings too. This is the index of the word Brett in the strArray: ' + strArray.indexOf('Brett'))
 
 // .split()
-console.log('\nThis is the first string: ' + string)
+console.log('\nGiven a string: ' + string)
 let newString = string.toUpperCase()
-console.log('\nThis is the string split into a new array of strings: \n\n' + newString.split(' '))
+console.log('\nThis is the string split into a new array of strings by using the split() function which acts on strings: \n\n' + newString.split(' '))
 
 // .join()
 console.log('\nThis is strArray joined with space between elements: \n\n' + strArray.join(' '))
@@ -70,5 +69,8 @@ If I call unshift() with 'dog' and 'bone' as arguments, the strArray will now lo
 
 console.log('\nand the function returns the new array length: ' + strArray.unshift())
 // .filter()
+console.log('The filter function will produce an array of elements that pass the test function.\
+In this case I am filtering for numbers in numArray less than 10 which outputs: ' + numArray.filter((x) => x < 10))
 
 // .map()
+console.log('The map() function will execute a function call on each element in an array and return an array of the values returned from the callback function. If I pass the square root function as an argument to map, a new array will be created that contains the square roots of every element in the array map is called upon. ' + numArray.map(Math.sqrt))
