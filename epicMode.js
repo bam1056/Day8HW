@@ -1,5 +1,5 @@
 'use strict'
-
+// function to merge two arrays without repeating
 const mergeArray = (array) => {
   let a = array.concat()
   for (let i = 0; i < a.length; ++i) {
@@ -9,7 +9,7 @@ const mergeArray = (array) => {
   }
   return a
 }
-
+// begin main program
 let numArray = []
 
 for (let i = 0; i < 1000; i++) { numArray[i] = i }
